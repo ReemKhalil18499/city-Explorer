@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+p {
+  margin-left: 35%;
+  color: darkred;
+  font-family: 'Oswald', sans-serif;
+
+}
+.city{
+  color: darkred;
+  font-family: 'Oswald', sans-serif;
+}
+body{
+  background-color: whitesmoke;
+}
+.input{
+  border: double;
+  border-color: pink;
+
+}
+img,svg{
+  margin-left: 25%;
+}
