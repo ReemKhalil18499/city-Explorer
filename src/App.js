@@ -58,9 +58,9 @@ class App extends React.Component {
           {this.state.long}
         </p>
         <Image
-          src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${this.state.lat},${this.state.long}&zoom=1-18`}
+          src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${this.state.lat},${this.state.long}&zoom=1-19`}
         />
-      </>
+      </> 
     );
   }
 }
