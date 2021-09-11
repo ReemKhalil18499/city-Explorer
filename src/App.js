@@ -45,13 +45,13 @@ class App extends React.Component {
     
     const url = `https://reem-lab07-server.herokuapp.com/weather?city_name=${this.state.entry}`;
     console.log(url);
-    const WearherRes = await axios.get(url);
-    console.log(WearherRes);
+    const res = await axios.get(url);
+    console.log(res);
     try{
-    console.log(WearherRes);
+    console.log(res);
 
     this.setState({
-      weathInfo:WearherRes.data,
+      weathInfo:res.data,
     })
     console.log(this.state.weathInfo);
   }catch{
@@ -95,8 +95,8 @@ class App extends React.Component {
           
         />
         <Weather 
-        weatherData={this.state.weathInfo}
-        weatherErr={this.state.weathError}     
+        weathInfo={this.state.weathInfo}
+        weathError={this.state.weathError}     
         
         />
       </>
